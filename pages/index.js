@@ -70,7 +70,7 @@ export default function Home({ products, collections }) {
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Tataroski" />
-
+        <meta name="ahrefs-site-verification" content="29c155dabcea0768097b6e506bea81c182fcb48dbb200a0d6ec2595c866b27b6">
         <link
           href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
           rel="stylesheet"
