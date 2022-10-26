@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://tataroski.com/
+
+# Sitemaps
+Sitemap: https://tataroski.com/sitemap.xml
