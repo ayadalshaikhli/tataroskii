@@ -10,7 +10,7 @@ export default function FrontPage() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("10/15/2022 23:59:59");
+    const target = new Date("11/10/2022 23:59:59");
 
     gsap.from(".firstWord", {
       xPercent: 100,
