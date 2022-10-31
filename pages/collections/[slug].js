@@ -35,8 +35,6 @@ const CollectionPage = ({ collection }) => {
       <meta name="doc-keyword" content={collection.title} />
       <meta name="doc-keyword" content={collection.description} />
       <meta name="doc-keyword" content="shopify" />
-      
-
     </Head>
       <div>
         <CollectionPageContent collection={collection} />
