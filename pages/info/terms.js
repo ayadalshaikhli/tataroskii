@@ -6,7 +6,7 @@ function infoterms() {
   return (
     <>
     <Head>
-      <title>Tataroski</title>
+      <title>Terms</title>
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta
         httpEquiv="Content-Type"
@@ -15,7 +15,6 @@ function infoterms() {
       <meta
         name="description"
         content="
-          
           Tataroski is a brand that is dedicated to the creation of unique and
           high-quality products. We are committed to providing our customers with
           the best products and services. 
