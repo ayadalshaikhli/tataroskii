@@ -11,7 +11,7 @@ const CollectionPage = ({ collection }) => {
   return (
     <>
     <Head>
-    <title>{collection.title}</title>
+      <title>{collection.title}</title>
       <meta name="description" content={collection.description} />
       <meta name="keywords" content={collection.title} />
       <meta name="author" content="Shopify" />

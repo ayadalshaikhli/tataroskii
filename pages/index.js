@@ -85,7 +85,6 @@ export default function Home({ products, collections }) {
         className="wrap"
       >
         <FrontPage />
-
         <ProductList products={products} />
         <CollectionList collections={collections} />
         {/* <FirstCollectionList rings={rings} />

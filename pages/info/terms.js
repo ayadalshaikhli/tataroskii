@@ -14,27 +14,29 @@ function infoterms() {
       />
       <meta
         name="description"
-        content="STORY WHO WEARS WOW 3W is a newly established direct-to-consumer
-        fashion accessories brand, which means undefined fashion. We hope to
-        create the unique one for everyone. We love every passion and interest
-        on Earth because it is a reference to the UNIQUENESS of everything."
+        content="
+          
+          Tataroski is a brand that is dedicated to the creation of unique and
+          high-quality products. We are committed to providing our customers with
+          the best products and services. 
+
+          "
       />
-      <meta property="og:title" content="Tataroski" />
+      <meta property="og:title" content="Teams And Conditions" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.buildnextshop.com" />
+      <meta property="og:url" content="https://www.tataroski.com" />
       <meta
         property="og:image"
         content="https://www.buildnextshop.com/share.png"
       />
       <meta
         property="og:description"
-        content="STORY WHO WEARS WOW 3W is a newly established direct-to-consumer
-        fashion accessories brand, which means undefined fashion. We hope to
-        create the unique one for everyone. We love every passion and interest
-        on Earth because it is a reference to the UNIQUENESS of everything."
+        content="Our Terms and Conditions" 
       />
       <meta
         name="keywords"
+
+        
         />
       <meta name="author" content="Tataroski" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
