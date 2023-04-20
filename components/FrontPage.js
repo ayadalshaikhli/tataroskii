@@ -10,7 +10,7 @@ export default function FrontPage() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("11/10/2022 23:59:59");
+    let target = new Date("11/10/2022 23:59:59");
 
     gsap.from(".firstWord", {
       xPercent: 100,
@@ -29,6 +29,11 @@ export default function FrontPage() {
 
     const interval = setInterval(() => {
       const now = new Date();
+
+      if (partyTime) {
+        target.setDate(now.getDate() + 5); // add 5 days to current date
+        setPartyTime(false);
+      }
 
       const difference = target.getTime() - now.getTime();
 
@@ -52,8 +57,7 @@ export default function FrontPage() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
-
+  }, [partyTime]);
   return (
     <div
       style={{ height: "70vh" }}
