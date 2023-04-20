@@ -10,7 +10,7 @@ export default function FrontPage() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    let target = new Date("11/10/2022 23:59:59");
+    let target = new Date();
 
     gsap.from(".firstWord", {
       xPercent: 100,
@@ -31,7 +31,7 @@ export default function FrontPage() {
       const now = new Date();
 
       if (partyTime) {
-        target.setDate(now.getDate() + 5); // add 5 days to current date
+        target.setDate(target.getDate() + 5); // add 5 days to target date
         setPartyTime(false);
       }
 
