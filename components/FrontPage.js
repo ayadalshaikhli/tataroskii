@@ -11,6 +11,7 @@ export default function FrontPage() {
 
   useEffect(() => {
     let target = new Date();
+    target.setDate(target.getDate() + 5);
 
     gsap.from(".firstWord", {
       xPercent: 100,
@@ -30,34 +31,34 @@ export default function FrontPage() {
     const interval = setInterval(() => {
       const now = new Date();
 
-      if (partyTime) {
-        target.setDate(target.getDate() + 5); // add 5 days to target date
-        setPartyTime(false);
-      }
-
       const difference = target.getTime() - now.getTime();
 
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const d = Math.max(Math.floor(difference / (1000 * 60 * 60 * 24)), 0);
       setDays(d);
 
-      const h = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      const h = Math.max(
+        Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        0
       );
       setHours(h);
 
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const m = Math.max(
+        Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        0
+      );
       setMinutes(m);
 
-      const s = Math.floor((difference % (1000 * 60)) / 1000);
+      const s = Math.max(Math.floor((difference % (1000 * 60)) / 1000), 0);
       setSeconds(s);
 
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+        target.setDate(target.getDate() + 5);
         setPartyTime(true);
       }
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [partyTime]);
+  }, []);
   return (
     <div
       style={{ height: "70vh" }}
